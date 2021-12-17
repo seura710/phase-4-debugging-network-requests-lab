@@ -4,7 +4,7 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
   const { id, name, image, likes } = toy;
 
   function handleDeleteClick() {
-    fetch(`/toys/${id}`, {
+    fetch(`/toys/${id}`, { 
       method: "DELETE",
     }).then((r) => {
       if (r.ok) {

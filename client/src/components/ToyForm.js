@@ -21,7 +21,7 @@ function ToyForm({ onAddToy }) {
       likes: 0,
     };
 
-    fetch("/toys", {
+    fetch('/toys', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
